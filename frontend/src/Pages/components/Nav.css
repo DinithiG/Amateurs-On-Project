@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+  }

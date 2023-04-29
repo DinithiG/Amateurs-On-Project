@@ -1,12 +1,10 @@
 import './App.css'
-import Form from './PredictionPage/components/Form'
+import Navigation from './navigation/navigation'
 function App() {
   
 
   return (
-    <>
-      <Form/>
-    </>
+    <Navigation/>
   )
 }
 
