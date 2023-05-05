@@ -8,7 +8,9 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 # load the data
 data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/server/models/googleplaystore .csv")
 
-columns_to_drop = ['Type', 'Content Rating', 'Genres','Last Updated','Current Ver','Android Ver', 'Rating','Reviews']
+columns_to_drop = ['Type', 'Content Rating', 'Genres','Last Updated','Current Ver','Android Ver', 'Reviews'] #,'Rating
+data.head()
+print(data.columns)
 data.drop(columns=columns_to_drop, inplace=True)
 data.head()
 
@@ -72,6 +74,8 @@ data['Size Bytes'] = data['Size Bytes'].apply(convert_size)
 
 # Drop rows with missing values in the 'Size Bytes' column
 data = data.dropna(subset=['Size Bytes'])
+data = data.dropna(subset=['Rating'])
+
 
 data.head()
 
@@ -83,7 +87,7 @@ encoder = LabelEncoder()
 data['Category'] = encoder.fit_transform(data['Category'])
 
 # select the relevant features and target variable
-X = data[['Category','Size Bytes', 'Price Dollars']]
+X = data[['Category','Size Bytes', 'Price Dollars','Rating']]
 y = data['Installs']
 
 # split data into training and testing sets
