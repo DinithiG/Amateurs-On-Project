@@ -1,7 +1,17 @@
-Forecaster by Amateurs On Project (CS-24)
+# Forecaster by Amateurs On Project (CS-24)
 
 This is the Repository for  Success Prediction of  Mobile applications
 
+***
+## Team Members 
+
+|Name|
+|----|
+|Muhammad Fyroze|
+|Dinithi Gunawardena|
+|Sheran Buckman|
+|Nethruwan Pathirana|
+***
 
 ## Language Selection
 
