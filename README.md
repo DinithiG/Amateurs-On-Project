@@ -1,4 +1,4 @@
-# Forecaster by Amateurs On Project (CS-24)
+# Forecaster by Amateurs On Project
 
 This is the Repository for  Success Prediction of  Mobile applications
 
