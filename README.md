@@ -21,7 +21,7 @@ This is the Repository for  Success Prediction of  Mobile applications
 
 * React JS - frontend. 
 * Node JS - frontend. 
-* Django - backend 
+* Flask - backend 
 
 ## Kaggle Datsets 
 
