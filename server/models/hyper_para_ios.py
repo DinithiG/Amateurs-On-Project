@@ -7,7 +7,7 @@ from sklearn.svm import SVR
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 import warnings
 
-data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/models/AppleStore.csv") 
+data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/server/models/AppleStore.csv") 
 data.head() #first five rows of the table
 
 # Rename columns 

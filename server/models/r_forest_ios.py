@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 import warnings
 
 
-data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/models/AppleStore.csv") 
+data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/server/models/AppleStore.csv") 
 data.head() #first five rows of the table
 print(data.columns)
 columns_to_drop = ['id', 'currency', 'rating_count_tot','rating_count_ver','user_rating_ver','ver','cont_rating', 'sup_devices.num','ipadSc_urls.num','vpp_lic']
