@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/googleplaystore .csv")
+data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/models/googleplaystore .csv")
 
 columns_to_drop = ['Type', 'Content Rating', 'Genres','Last Updated','Current Ver','Android Ver', 'Rating','Reviews']
 data.drop(columns=columns_to_drop, inplace=True)
