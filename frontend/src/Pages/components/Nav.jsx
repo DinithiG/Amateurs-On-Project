@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './Nav.css';
 
 const Nav = () => {
@@ -17,7 +18,7 @@ const Nav = () => {
           <a href="#">Contact</a>
         </li>
         <li>
-          <a href="#">Sign In</a>
+          <Link to="/Signin">Sign In</Link>
         </li>
         <li>
           <Link to="/form">Form</Link>
