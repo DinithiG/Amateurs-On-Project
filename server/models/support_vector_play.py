@@ -8,6 +8,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 # load the data
 data = pd.read_csv("/Users/firefly0118/Documents/uni/L5 - second year/semester 1/SDGP/Intellihack/repo/Amateurs-On-Project/server/models/googleplaystore .csv")
 columns_to_drop = ['Type', 'Content Rating', 'Genres','Last Updated','Current Ver','Android Ver', 'Rating','Reviews']
+data.head()
 data.drop(columns=columns_to_drop, inplace=True)
 
 # Rename columns in place
@@ -94,4 +95,3 @@ print(f"The r2-score of the model is {r2:.2f}")
 print(f"The mean absolute error of the model is {mae:.2f}")
 print(f"The root mean squared error of the model is {rmse:.2f}")
 print(f"The accuracy of the model is {accuracy:.2f}%")
-
